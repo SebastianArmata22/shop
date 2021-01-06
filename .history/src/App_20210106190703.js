@@ -8,7 +8,7 @@ import Main from './components/Main/Main'
 function App() {
   return (
     <BrowserRouter>
-    <div className='container'>
+    <div>
       <header>
         <Header />
 

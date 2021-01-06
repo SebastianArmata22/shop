@@ -1,0 +1,11 @@
+.home-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84vh;
+    text-align: center;
+}
+.react-typewriter-text{
+    text-align: center;
+    font-size: 50px;
+}
