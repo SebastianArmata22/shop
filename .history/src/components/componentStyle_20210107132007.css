@@ -1,0 +1,15 @@
+.prod-container{
+    width: 30rem ;
+    height: 10rem;
+}
+.prod-container img{
+    width: 8rem;
+    height: 150px;
+}
+.products-container{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    min-height: 84vh;
+    flex-wrap: wrap;
+}

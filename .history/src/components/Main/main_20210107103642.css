@@ -26,8 +26,3 @@
     background-color: #ffffff;
     color: rgb(44, 62, 80);
 }
-@media only screen and (max-width: 600px){
-    .react-typewriter-text{
-        font-size: 2rem;
-    }
-}

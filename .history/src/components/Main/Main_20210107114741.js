@@ -14,7 +14,7 @@ function Main(props){
             multiText={[
             'Are you looking for a new smartphone?',
             'Great!!!',
-            'We have great smartphones with the cheapest price',
+            'We have great smartphones at great prices',
             'Click on the button and see for yourself...',
             ]}
             loop={true}

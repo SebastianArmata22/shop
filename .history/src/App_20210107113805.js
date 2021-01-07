@@ -3,7 +3,6 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
-import Products from './components/Main/Products';
 
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       </header>
       <main>
         <Route path="/" exact={true} component={Main} />
-        <Route path="/products" component={Products} />
       </main>
       <footer>
         <Footer />

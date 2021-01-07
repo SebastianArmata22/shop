@@ -16,7 +16,7 @@ function App() {
       </header>
       <main>
         <Route path="/" exact={true} component={Main} />
-        <Route path="/products" component={Products} />
+        <Route path="/products" exact={true} component={Products} />
       </main>
       <footer>
         <Footer />
