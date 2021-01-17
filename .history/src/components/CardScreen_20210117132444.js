@@ -7,7 +7,7 @@ function CardScreen(props){
     console.log(localStorage.getItem("product"))
     const objects = JSON.parse(localStorage.getItem("product") || "[]");
     console.log(1,objects)
-    const products=objects.map(product =>{return data.products.find(({_id}) => _id==product.id)})
+    const products=objects.map(product =>{return product.id})
     console.log("products", products)
     // const products=data.products.find(({_id}) => _id==objects[1].id)
     return(

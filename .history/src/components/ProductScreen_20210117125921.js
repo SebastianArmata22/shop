@@ -7,7 +7,7 @@ function ProductScreen(props){
     const product=data.products.find(({_id}) => _id===props.match.params.id)
 
     const addId=()=>{
-        let items = JSON.parse(localStorage.getItem('product')|| "[]")
+        let [items] = JSON.parse(localStorage.getItem('product')) || []
         let item={
 
             "id": props.match.params.id,

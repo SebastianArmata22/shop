@@ -7,15 +7,19 @@ function ProductScreen(props){
     const product=data.products.find(({_id}) => _id===props.match.params.id)
 
     const addId=()=>{
-        let items = JSON.parse(localStorage.getItem('product')|| "[]")
+        let cartItems = {};
+        let items = []
+        cartItems.items = items;
+
         let item={
 
             "id": props.match.params.id,
             "quantity": 1
         }
-        items.push(item)
+        cartItems.items.push(localStorage.getItem("product"))
+        cartItems.items.push(item)
 
-        localStorage.setItem("product",JSON.stringify(items))
+        localStorage.setItem("product",JSON.stringify(cartItems))
 
 
     }
