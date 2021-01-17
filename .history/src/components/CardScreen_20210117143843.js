@@ -10,7 +10,7 @@ function CardScreen(props){
     return(
         <div className="cart-div">
             <div className='cart'>
-                <div className='list-products-in-cart'>{objects.length===0 ? <p className='empty-cart-info'>Cart is empty</p> : products.map(product => <Item props={product} />)}</div>
+                <div className='list-products-in-cart'>{products.map(product => <Item props={product} />)}</div>
                 <div className='summary-cart'>
                     <h3>Total:</h3>
                     <p></p>

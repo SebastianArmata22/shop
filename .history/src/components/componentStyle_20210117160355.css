@@ -114,7 +114,6 @@ justify-content: center;
     width: 50%;
     background-color: #ffffff;
     margin: 2rem;
-    min-height: 10rem;
 }
 .summary-cart{
     width: 30%;
@@ -163,10 +162,4 @@ text-align: center;
 }
 .number-products-container img:hover{
     cursor: pointer;
-}
-.empty-cart-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }

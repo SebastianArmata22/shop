@@ -12,7 +12,7 @@ function Item(props){
         for( let i = 0; i < objects.length; i++){
             if ( objects[i].id === id) {
                 objects.splice(i, 1)
-                setVisible(false)
+                setVisible(visible=false)
             }
         }
         localStorage.setItem("product",JSON.stringify(objects))
@@ -34,7 +34,7 @@ function Item(props){
                     <input type="number"></input>
                     <button>+</button>
                 </div>
-            </div>
+            </div>  
     }
      </div>
     )

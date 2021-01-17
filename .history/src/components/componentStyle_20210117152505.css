@@ -59,6 +59,7 @@
     background-color: #ffffff;
     height: 2rem;
     font-size: 1rem;
+    
 }
 
 .sale-div button:hover{
@@ -86,7 +87,7 @@
     padding: 0.5rem;
 }
 .technical-data-div table{
-    width: 100%;
+    width: 100%; 
 }
 .technical-data-div tr{
     width: 100%;
@@ -114,7 +115,6 @@ justify-content: center;
     width: 50%;
     background-color: #ffffff;
     margin: 2rem;
-    min-height: 10rem;
 }
 .summary-cart{
     width: 30%;
@@ -127,7 +127,6 @@ width: 100%;
 margin: 1rem;
 display: flex;
 flex-wrap: wrap;
-border-bottom: 1px solid #ecf0f1;
 }
 .img-item img{
 height: 10rem;
@@ -136,7 +135,7 @@ width: 10rem;
 
 }
 .description-item{
-width: 40%;
+width: 50%;
 text-align: center;
 }
 .number-products-container{
@@ -147,9 +146,9 @@ text-align: center;
 .number-products-container input{
     width: 2rem;
     -webkit-appearance: none;
-    margin: 0;
-    -moz-appearance: textfield;
-    height: 2rem;
+  margin: 0;
+  -moz-appearance: textfield;
+  height: 2rem;
 }
 .number-products-container button{
     width: 2rem;
@@ -163,10 +162,4 @@ text-align: center;
 }
 .number-products-container img:hover{
     cursor: pointer;
-}
-.empty-cart-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }

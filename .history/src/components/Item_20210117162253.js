@@ -34,7 +34,7 @@ function Item(props){
                     <input type="number"></input>
                     <button>+</button>
                 </div>
-            </div>
+            </div>  
     }
      </div>
     )

@@ -1,26 +1,24 @@
 import { Divider } from '@material-ui/core'
-import React, { useState } from 'react'
+import React from 'react'
 import './componentStyle.css'
 import trash from '../images/delete.svg'
 
 function Item(props){
-    const [visible, setVisible]=useState(true)
+
     const deleteProduct= (id)=>{
         const objects = JSON.parse(localStorage.getItem("product") || "[]")
         console.log(objects)
 
-        for( let i = 0; i < objects.length; i++){
+        for( var i = 0; i < objects.length; i++){
             if ( objects[i].id === id) {
                 objects.splice(i, 1)
-                setVisible(false)
             }
         }
         localStorage.setItem("product",JSON.stringify(objects))
 
     }
     return(
-        <div>
-            {visible && <div className='item-container'>
+            <div className='item-container'>
                 <div className='img-item'>
                     <img src={props.props.photo}></img>
                 </div>
@@ -35,8 +33,6 @@ function Item(props){
                     <button>+</button>
                 </div>
             </div>
-    }
-     </div>
     )
 }
 export default Item

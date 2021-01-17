@@ -114,10 +114,10 @@ justify-content: center;
     width: 50%;
     background-color: #ffffff;
     margin: 2rem;
-    min-height: 10rem;
+    height: 10rem;
 }
 .summary-cart{
-    width: 30%;
+    min-width: 30%;
     background-color: #ffffff;
     margin: 2rem;
     height: 10rem;
