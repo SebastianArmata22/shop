@@ -26,7 +26,7 @@ function Item(props){
         const objects = JSON.parse(localStorage.getItem("product") || "[]");
         for( let i = 0; i < objects.length; i++){
             if ( objects[i].id === id) {
-                if((objects[i].quantity<=99 && number===1) || (number===-1 && objects[i].quantity>1))
+                if(objects[i].quantity>=1 )
                 objects[i].quantity=value+number
                 setValue(objects[i].quantity)
             }
@@ -47,7 +47,7 @@ function Item(props){
                 <div className='number-products-container'>
                     <img src={trash} alt='trash' onClick={()=>deleteProduct(product._id)}></img>
                     <button onClick={()=>setQuanity(-1,product._id)}>-</button>
-                    <div >{value}</div>
+                    <input type="number" value={value}></input>
                     <button onClick={()=>setQuanity(1,product._id)}>+</button>
                 </div>
             </div>

@@ -7,8 +7,12 @@ import data from '../data'
 function Item(props){
     const itemId=props.props.id
     const product= data.products.find(({_id}) => _id==itemId)
-    const [visible, setVisible]=useState(true)
-    const [value, setValue]=useState(props.props.quantity)
+    const deleteProduct=(id)=>{
+
+    }
+    const setQuanity= (value, id) =>{}
+    /* const [visible, setVisible]=useState(true)
+    const [value, setValue]=useState(1)
     const deleteProduct= (id)=>{
         const objects = JSON.parse(localStorage.getItem("product") || "[]")
         console.log(objects)
@@ -22,18 +26,19 @@ function Item(props){
         localStorage.setItem("product",JSON.stringify(objects))
 
     }
-    const setQuanity= (number, id) =>{
+    const setQuanity= (value, id) =>{
         const objects = JSON.parse(localStorage.getItem("product") || "[]");
         for( let i = 0; i < objects.length; i++){
             if ( objects[i].id === id) {
-                if((objects[i].quantity<=99 && number===1) || (number===-1 && objects[i].quantity>1))
-                objects[i].quantity=value+number
+                objects[i].quantity=objects[i].quantity+value
                 setValue(objects[i].quantity)
+                return objects[i].quantity
             }
         }
         localStorage.setItem("product",JSON.stringify(objects))
 
     }
+    */
     return(
         <div>
             {visible && <div className='item-container'>
@@ -47,7 +52,7 @@ function Item(props){
                 <div className='number-products-container'>
                     <img src={trash} alt='trash' onClick={()=>deleteProduct(product._id)}></img>
                     <button onClick={()=>setQuanity(-1,product._id)}>-</button>
-                    <div >{value}</div>
+                    <input type="number" value={value}></input>
                     <button onClick={()=>setQuanity(1,product._id)}>+</button>
                 </div>
             </div>

@@ -144,19 +144,18 @@ text-align: center;
     justify-content: center;
     align-items: center;
 }
-.number-products-container div{
+.number-products-container input{
     width: 2rem;
+    -webkit-appearance: none;
     margin: 0;
+    -moz-appearance: textfield;
     height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #7f8c8d;
+    text-align: center;
 }
 .number-products-container button{
     width: 2rem;
     height: 2rem;
-    background-color: #ecf0f1;
+    background-color:#7f8c8d;
     border-style: none;
     margin: 1rem;
 }

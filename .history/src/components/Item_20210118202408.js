@@ -47,7 +47,7 @@ function Item(props){
                 <div className='number-products-container'>
                     <img src={trash} alt='trash' onClick={()=>deleteProduct(product._id)}></img>
                     <button onClick={()=>setQuanity(-1,product._id)}>-</button>
-                    <div >{value}</div>
+                    <input type="number" value={value}></input>
                     <button onClick={()=>setQuanity(1,product._id)}>+</button>
                 </div>
             </div>

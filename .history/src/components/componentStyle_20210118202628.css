@@ -150,8 +150,7 @@ text-align: center;
     height: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 1px solid #7f8c8d;
+    align-items:center ;
 }
 .number-products-container button{
     width: 2rem;
