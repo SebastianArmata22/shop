@@ -6,7 +6,7 @@ import data from '../data'
 
 function Item(props){
     const itemId=props.props.id
-    const product= data.products.find(({_id}) => _id===itemId)
+    const product= data.products.find(({_id}) => _id==itemId)
     const [visible, setVisible]=useState(true)
     const [value, setValue]=useState(props.props.quantity)
 
@@ -20,7 +20,7 @@ function Item(props){
             if ( objects[i].id === id) {
                 objects.splice(i, 1)
                 setVisible(false)
-                props.parentCallback(-value*parseFloat(product.price))
+                //props.parentCallback(-value*parseFloat(product.price))
             }
         }
         localStorage.setItem("product",JSON.stringify(objects))

@@ -25,7 +25,7 @@ function ProductScreen(props){
         <div className='product-screen-contianer'>
                <div className='photo-price-div'>
                    <div>
-                       <img src={product.photo} alt='smartphone'></img>
+                       <img src={product.photo} alt='photo'></img>
                    </div>
                    <div className='sale-div'>
                        <h2>{product.name}</h2>

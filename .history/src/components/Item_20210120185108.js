@@ -10,7 +10,7 @@ function Item(props){
     const [visible, setVisible]=useState(true)
     const [value, setValue]=useState(props.props.quantity)
 
-    useEffect(()=>{props.parentCallback(value*parseFloat(product.price))},[])
+    useEffect(()=>{props.parentCallback(value*parseFloat(product.price))})
 
     const deleteProduct= (id)=>{
         const objects = JSON.parse(localStorage.getItem("product") || "[]")

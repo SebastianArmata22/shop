@@ -1,7 +1,6 @@
 import React from 'react'
 import TypeWriterEffect from 'react-typewriter-effect';
 import './main.css'
-import { Link } from 'react-router-dom';
 
 function Main(props){
     return(

@@ -13,9 +13,9 @@ function CardScreen(props){
     return(
         <div className="cart-div">
             <div className='cart'>
-                <div className='list-products-in-cart'>{false ? <p className='empty-cart-info'>Cart  w chuj is empty</p> : products.map(product => <Item props={product} parentCallback = {handleCallback}/>)}</div>
+                <div className='list-products-in-cart'>{false ? <p className='empty-cart-info'>Cart is empty</p> : products.map(product => <Item props={product} parentCallback = {handleCallback}/>)}</div>
                 <div className='summary-cart'>
-                    <div className='total-card'>
+                    <div>
                         <h3>Total:</h3>
                         <p>${finalValue.toFixed(2)}</p>
                     </div>

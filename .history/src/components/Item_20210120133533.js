@@ -1,4 +1,4 @@
-
+import { Divider } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import './componentStyle.css'
 import trash from '../images/delete.svg'
@@ -6,11 +6,11 @@ import data from '../data'
 
 function Item(props){
     const itemId=props.props.id
-    const product= data.products.find(({_id}) => _id===itemId)
+    const product= data.products.find(({_id}) => _id==itemId)
     const [visible, setVisible]=useState(true)
     const [value, setValue]=useState(props.props.quantity)
-
-    useEffect(()=>{props.parentCallback(value*parseFloat(product.price))},[])
+   // useEffect(()=>props.parentCallback(parseFloat(product.price)))
+   props.parentCallback(parseFloat(product.price))
 
     const deleteProduct= (id)=>{
         const objects = JSON.parse(localStorage.getItem("product") || "[]")
@@ -20,30 +20,23 @@ function Item(props){
             if ( objects[i].id === id) {
                 objects.splice(i, 1)
                 setVisible(false)
-                props.parentCallback(-value*parseFloat(product.price))
             }
         }
         localStorage.setItem("product",JSON.stringify(objects))
 
     }
-
     const setQuanity= (number, id) =>{
         const objects = JSON.parse(localStorage.getItem("product") || "[]");
         for( let i = 0; i < objects.length; i++){
             if ( objects[i].id === id) {
                 if((objects[i].quantity<=99 && number===1) || (number===-1 && objects[i].quantity>1))
-                {
-                    objects[i].quantity=value+number
-                    setValue(objects[i].quantity)
-                    props.parentCallback(number*parseFloat(product.price))
-                }
-
+                objects[i].quantity=value+number
+                setValue(objects[i].quantity)
             }
         }
         localStorage.setItem("product",JSON.stringify(objects))
 
     }
-
     return(
         <div>
             {visible && <div className='item-container'>
@@ -52,7 +45,7 @@ function Item(props){
                 </div>
                 <div className='description-item'>
                     <h3>{product.name}</h3>
-                    <p>${product.price}</p>
+                    <p>{product.price}</p>
                 </div>
                 <div className='number-products-container'>
                     <img src={trash} alt='trash' onClick={()=>deleteProduct(product._id)}></img>

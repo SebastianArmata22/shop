@@ -11,7 +11,10 @@
     text-decoration: none;
 
 }
+.prod-container:hover {
+    border: 1px solid #ecf0f1
 
+}
 .products-container{
     width: 80%;
     background-color: #ffffff;

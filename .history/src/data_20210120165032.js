@@ -48,7 +48,7 @@ export default {
         _id: '5',
         name: 'Xiaomi Mi 10 8/256GB',
         price: '999.99',
-        photo : 'https://mi-store.pl/pol_pl_Smartfon-Xiaomi-Mi-10-8-256GB-Coral-Green-2-lata-ochrony-ekranu-732_5.jpg',
+        photo : 'https://dragonist.pl/8971-thickbox_default/samsung-galaxy-s20-5g-g981-12-128gb-dual-sim-szary.jpg',
         display: 'OLED, 1B colors, 120Hz, HDR10+',
         memory: '128GB 8GB RAM, UFS 3.0',
         camera: '48 MP, f/1.9, 25mm (wide),48 MP, f/4.1, 120mm (periscope telephoto), 12 MP, f/2.0, 50mm (telephoto), 20 MP, f/2.2, 128˚, 12mm (ultrawide)',
@@ -58,7 +58,7 @@ export default {
     {
         _id: '6',
         name: 'POCO X3',
-        price: '269.99',
+        price: '266.99',
         photo : 'https://mi-home.pl/6959-large_default/poco-x3-nfc-6gb-64gb-shadow-grey.jpg',
         display: 'IPS LCD, 120Hz, HDR10',
         memory: '128GB 6GB RAM, UFS 2.1',
@@ -76,16 +76,6 @@ export default {
         camera: '64 MP, f/1.7 (wide), 13 MP, f/2.4 (telephoto), 8 MP, f/2.2, (ultrawide), 2 MP, f/2.4, (depth)',
         battery: 'Li-Po 4025 mAh',
         selfieCamera: '44 MP, f/2.4, 26mm (wide), 2 MP, f/2.4, (depth)'
-    },{
-        _id: '8',
-        name: 'Huawei P40 5G ',
-        price: '499.99',
-        photo : 'https://www.orange.pl/medias/sys_master/root/images/h75/h07/9781424947230/huawei-p40-pro-black-front.png',
-        display: 'OLED, 6.1 inches',
-        memory: '128GB 8GB RAM, UFS 3.0',
-        camera: '50 MP, f/1.9 (wide), 8 MP, f/2.4 (telephoto), 16 MP, f/2.2, (ultrawide)',
-        battery: 'Li-Po 3800 mAh',
-        selfieCamera: '32 MP, f/2.0, 26mm (wide)'
     },
 ]
 }

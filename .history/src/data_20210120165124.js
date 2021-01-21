@@ -76,16 +76,6 @@ export default {
         camera: '64 MP, f/1.7 (wide), 13 MP, f/2.4 (telephoto), 8 MP, f/2.2, (ultrawide), 2 MP, f/2.4, (depth)',
         battery: 'Li-Po 4025 mAh',
         selfieCamera: '44 MP, f/2.4, 26mm (wide), 2 MP, f/2.4, (depth)'
-    },{
-        _id: '8',
-        name: 'Huawei P40 5G ',
-        price: '499.99',
-        photo : 'https://www.orange.pl/medias/sys_master/root/images/h75/h07/9781424947230/huawei-p40-pro-black-front.png',
-        display: 'OLED, 6.1 inches',
-        memory: '128GB 8GB RAM, UFS 3.0',
-        camera: '50 MP, f/1.9 (wide), 8 MP, f/2.4 (telephoto), 16 MP, f/2.2, (ultrawide)',
-        battery: 'Li-Po 3800 mAh',
-        selfieCamera: '32 MP, f/2.0, 26mm (wide)'
     },
 ]
 }

@@ -7,7 +7,7 @@ import  cart from '../../images/shopping-cart.svg'
 function Header(props){
     return(
         <div className="header-container">
-            <Link to='/' style={{ textDecoration: 'none', color: '#000000' }}>
+            <Link to='/' style={{ textDecoration: 'none', color: '#000000' }>
                 <a href='#ss' className="header-link"><b>PHONE
                     </b></a>
             </Link>

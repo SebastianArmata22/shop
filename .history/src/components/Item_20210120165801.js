@@ -20,7 +20,7 @@ function Item(props){
             if ( objects[i].id === id) {
                 objects.splice(i, 1)
                 setVisible(false)
-                props.parentCallback(-value*parseFloat(product.price))
+                //props.parentCallback(-value*parseFloat(product.price))
             }
         }
         localStorage.setItem("product",JSON.stringify(objects))
