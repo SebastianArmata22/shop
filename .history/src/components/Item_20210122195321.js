@@ -8,7 +8,6 @@ function Item(props){
     const itemId=props.props.id
     console.log(itemId)
     const product= data.products.find(({_id}) => _id===itemId)
-    console.log(2, product)
     const [visible, setVisible]=useState(true)
     const [value, setValue]=useState(props.props.quantity)
 
@@ -51,7 +50,7 @@ function Item(props){
         <div>
             {visible && <div className='item-container'>
                 <div className='img-item'>
-                    <img src={product.photo} alt='xd'></img>
+                    <img src={product.photo}></img>
                 </div>
                 <div className='description-item'>
                     <h3>{product.name}</h3>

@@ -5,30 +5,19 @@ import data from "../data";
 function ProductScreen(props){
 
     const product=data.products.find(({_id}) => _id===props.match.params.id)
-    const [cart, setCart]=useState('Add to cart')
-    const [active, setActive]=useState(false)
+    const [cart, setCart]=useState('')
 
     const addId=()=>{
         let items = JSON.parse(localStorage.getItem('product')|| "[]")
-        let found = false;
-        for(let i = 0; i < items.length; i++) {
-            if (items[i].id == props.match.params.id) {
-                found = true;
-                break;
-            }
-        }
-        if(!found){
-            let item={
-                "id": props.match.params.id,
-                "quantity": 1
-            }
-            items.push(item)
-        }
+        let item={
 
+            "id": props.match.params.id,
+            "quantity": 1
+        }
+        items.push(item)
 
         localStorage.setItem("product",JSON.stringify(items))
         setCart('Added to cart')
-        setActive(true)
 
 
     }
@@ -44,7 +33,8 @@ function ProductScreen(props){
                        <div>
                            <p>${product.price}</p>
                            <button>Buy</button>
-                           {active? <div>Added to cart</div> : <button onClick={addId} >{cart}</button>}
+                           <button onClick={addId}>Add to cart</button>
+                           <div>{cart}</div>
                        </div>
                    </div>
                </div>

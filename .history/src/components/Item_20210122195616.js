@@ -51,7 +51,7 @@ function Item(props){
         <div>
             {visible && <div className='item-container'>
                 <div className='img-item'>
-                    <img src={product.photo} alt='xd'></img>
+                    <img src={product.photo}alt='xd'></img>
                 </div>
                 <div className='description-item'>
                     <h3>{product.name}</h3>

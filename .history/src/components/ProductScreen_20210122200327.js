@@ -5,20 +5,16 @@ import data from "../data";
 function ProductScreen(props){
 
     const product=data.products.find(({_id}) => _id===props.match.params.id)
-    const [cart, setCart]=useState('Add to cart')
+    const [cart, setCart]=useState('Add to cart')    
     const [active, setActive]=useState(false)
 
     const addId=()=>{
         let items = JSON.parse(localStorage.getItem('product')|| "[]")
-        let found = false;
-        for(let i = 0; i < items.length; i++) {
-            if (items[i].id == props.match.params.id) {
-                found = true;
-                break;
-            }
-        }
-        if(!found){
+        if(items.includes({"id":props.match.params.id})){
+
+        }else{
             let item={
+
                 "id": props.match.params.id,
                 "quantity": 1
             }

@@ -10,22 +10,15 @@ function ProductScreen(props){
 
     const addId=()=>{
         let items = JSON.parse(localStorage.getItem('product')|| "[]")
-        let found = false;
-        for(let i = 0; i < items.length; i++) {
-            if (items[i].id == props.match.params.id) {
-                found = true;
-                break;
-            }
-        }
-        if(!found){
+        if(items.includes({"id":props.match.params.id})){
+
+        }else{
             let item={
                 "id": props.match.params.id,
                 "quantity": 1
-            }
+                 }
             items.push(item)
         }
-
-
         localStorage.setItem("product",JSON.stringify(items))
         setCart('Added to cart')
         setActive(true)
