@@ -7,7 +7,7 @@ import Products from './components/Main/Products';
 import ProductScreen from './components/ProductScreen'
 import CardScreen from './components/CardScreen';
 import SignInScreen from './components/SignInScreen';
-import SignUpScreen from './components/SignUpScreen';
+import SignUpScreen from './components/SignUpSceen';
 
 function App() {
 

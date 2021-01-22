@@ -7,7 +7,6 @@ import Products from './components/Main/Products';
 import ProductScreen from './components/ProductScreen'
 import CardScreen from './components/CardScreen';
 import SignInScreen from './components/SignInScreen';
-import SignUpScreen from './components/SignUpScreen';
 
 function App() {
 
@@ -24,7 +23,6 @@ function App() {
         <Route path="/product/:id" component={ProductScreen} />
         <Route path="/cart" component={CardScreen} />
         <Route path="/signin" component={SignInScreen} />
-        <Route path="/signup" component={SignUpScreen} />
 
         </div>
       </main>

@@ -21,7 +21,7 @@ function Item(props){
                 props.parentCallback(-value*parseFloat(product.price))
                 objects.splice(i, 1)
                 setVisible(false)
-                console.log(objects)
+               
             }
         }
         localStorage.setItem("product",JSON.stringify(objects))
