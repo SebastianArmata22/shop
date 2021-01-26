@@ -6,24 +6,22 @@ import { CartContext } from '../../context/CartContext';
 
 
 function Header(props){
-    const context=useContext(CartContext)
-    const style={
-         textDecoration: 'none',
-         color: '#000000'
-    }
+    const numberOfProducts=useContext(CartContext)
+    console.log(numberOfProducts)
+    const [products, setProducts]=useState(numberOfProducts.numberOfProducts)
     return(
         <div className="header-container">
-            <Link to='/' style={style}>
+            <Link to='/' style={{ textDecoration: 'none', color: '#000000' }}>
                 <a href='#ss' className="header-link"><b>PHONE
                     </b></a>
             </Link>
 
             <div className='user-card'>
-                <Link to='/cart'  style={style}>
-                    <p>{context.numberOfProducts}</p>
+                <Link to='/cart'  style={{ textDecoration: 'none', color: '#000000' }}>
+                    <p>{products}</p>
                     <img src={cart} height='30px'></img>
                 </Link>
-                <Link to='/signin' style={style}>
+                <Link to='/signin'>
                 <a href='#dds' className="header-link">Sign in</a>
                 </Link>
             </div>

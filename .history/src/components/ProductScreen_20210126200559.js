@@ -14,7 +14,7 @@ function ProductScreen(props){
         let items = JSON.parse(localStorage.getItem('product')|| "[]")
         let found = false;
         for(let i = 0; i < items.length; i++) {
-            if (items[i].id === props.match.params.id) {
+            if (items[i].id == props.match.params.id) {
                 found = true;
                 break;
             }

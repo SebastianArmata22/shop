@@ -28,6 +28,7 @@ function App() {
         <Route path="/cart" component={CardScreen} />
         <Route path="/signin" component={SignInScreen} />
         <Route path="/signup" component={SignUpScreen} />
+        <Item />
 
         </div>
       </main>

@@ -5,16 +5,15 @@ import { CartContext } from '../context/CartContext';
 
 function ProductScreen(props){
     const numberOfProducts=useContext(CartContext)
-    const {changeNumber}= numberOfProducts
     const product=data.products.find(({_id}) => _id===props.match.params.id)
     const [cart, setCart]=useState('Add to cart')
     const [active, setActive]=useState(false)
 
-    const addToCart=()=>{
+    const addId=()=>{
         let items = JSON.parse(localStorage.getItem('product')|| "[]")
         let found = false;
         for(let i = 0; i < items.length; i++) {
-            if (items[i].id === props.match.params.id) {
+            if (items[i].id == props.match.params.id) {
                 found = true;
                 break;
             }
@@ -25,8 +24,7 @@ function ProductScreen(props){
                 "quantity": 1
             }
             items.push(item)
-            changeNumber(1)
-            
+            const {changeNumber}= numberOfProducts
         }
 
 
@@ -48,7 +46,7 @@ function ProductScreen(props){
                        <div>
                            <p>${product.price}</p>
                            <button>Buy</button>
-                           {active? <div>Added to cart</div> : <button onClick={addToCart} >{cart}</button>}
+                           {active? <div>Added to cart</div> : <button onClick={addId} >{cart}</button>}
                        </div>
                    </div>
                </div>

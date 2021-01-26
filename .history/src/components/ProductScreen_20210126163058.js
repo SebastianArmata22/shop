@@ -10,11 +10,11 @@ function ProductScreen(props){
     const [cart, setCart]=useState('Add to cart')
     const [active, setActive]=useState(false)
 
-    const addToCart=()=>{
+    const addId=()=>{
         let items = JSON.parse(localStorage.getItem('product')|| "[]")
         let found = false;
         for(let i = 0; i < items.length; i++) {
-            if (items[i].id === props.match.params.id) {
+            if (items[i].id == props.match.params.id) {
                 found = true;
                 break;
             }
@@ -48,7 +48,7 @@ function ProductScreen(props){
                        <div>
                            <p>${product.price}</p>
                            <button>Buy</button>
-                           {active? <div>Added to cart</div> : <button onClick={addToCart} >{cart}</button>}
+                           {active? <div>Added to cart</div> : <button onClick={addId} >{cart}</button>}
                        </div>
                    </div>
                </div>

@@ -3,7 +3,6 @@ import React, { useEffect, useState, useContext} from 'react'
 import './componentStyle.css'
 import trash from '../images/delete.svg'
 import data from '../data'
-import { CartContext } from '../context/CartContext'
 
 function Item(props){
     const itemId=props.props.id

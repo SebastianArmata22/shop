@@ -8,8 +8,8 @@ import { CartContext } from '../../context/CartContext';
 function Header(props){
     const context=useContext(CartContext)
     const style={
-         textDecoration: 'none',
-         color: '#000000'
+         textDecoration: 'none', 
+         color: '#000000' 
     }
     return(
         <div className="header-container">

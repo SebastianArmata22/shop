@@ -16,8 +16,6 @@
 .user-card{
 display: flex;
 align-items: center;
-}
-.user-card p{
-    border-radius: 50px;
-    border: 1px solid #ffffff
+background-color: #ffffff;
+color: #000000;
 }

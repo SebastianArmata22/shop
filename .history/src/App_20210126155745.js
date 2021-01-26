@@ -9,13 +9,12 @@ import CardScreen from './components/CardScreen';
 import SignInScreen from './components/SignInScreen';
 import SignUpScreen from './components/SignUpScreen';
 import CartContextProvider from './context/CartContext';
-import Item from './components/Item';
 
 function App() {
 
   return (
-    <CartContextProvider>
     <BrowserRouter>
+    <CartContextProvider>
     <div className='container'>
       <header>
         <Header />
@@ -35,8 +34,8 @@ function App() {
         <Footer />
       </footer>
     </div>
+    </CartContextProvider>
    </BrowserRouter>
-   </CartContextProvider>
   );
 }
 
