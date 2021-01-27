@@ -51,7 +51,7 @@
     margin: 2rem;
     display: flex;
     flex-direction: column;
-    width: 10rem;
+    width: 3rem;
 }
 .sale-div button{
     margin-top: 2rem;
@@ -214,43 +214,41 @@ text-align: center;
     margin-right: 1rem;
 }
 .sign-in-up-container{
-    min-width: 50%;
+    min-width: 60%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    
+
+}
+.sign-in-up-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60%;
 }
 .sign-in-up-container input{
     margin: 0.5rem;
-    min-width: 70%;
+    width: 100%;
     height: 2rem;
+    
 }
-
-.sign-in-btn {
+.sign-in-up-container input[type='submit']{
     background-color: #000000;
     border: 1px solid #000000;
     cursor: pointer;
     color: #ffffff;
-    min-width: 70%;
-    height: 2rem;
-    padding: 0 2rem 0 2rem;
 }
-
-.sign-up-container{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid #7f8c8d;
-    min-width: 70%;
-    height: 10rem;
-    margin-top: 3rem;
+.sign-in-up-container div{
+    width: 60%;
+    margin-top: 2rem;
 }
-.sign-up-btn{
+.sign-in-up-container button{
     background-color: #ffffff;
     border: 1px solid #000000;
-    width: 70%;
+    width: 100%;
     height: 2rem;
     cursor: pointer;
 }

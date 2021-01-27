@@ -23,12 +23,12 @@ function SignInScreen(){
                 <Link to={email!==null&& '/products'}>
                 <button className='sign-in-btn' onClick={setAccountContext}>Sign up</button>
                 </Link>
-                <fieldset className='sign-up-container'>
-                    <legend > New Users? </legend>
+                <div>
+                    <p>New Users?</p>
                     <Link to='/signup'>
                     <button className='sign-up-btn'>Sign up</button>
                     </Link>
-                </fieldset>
+                </div>
             </div>
         </div>
     )

@@ -24,7 +24,7 @@ function SignInScreen(){
                 <button className='sign-in-btn' onClick={setAccountContext}>Sign up</button>
                 </Link>
                 <fieldset className='sign-up-container'>
-                    <legend > New Users? </legend>
+                    <legend >New Users?</legend>
                     <Link to='/signup'>
                     <button className='sign-up-btn'>Sign up</button>
                     </Link>

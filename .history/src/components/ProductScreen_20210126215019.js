@@ -8,19 +8,16 @@ function ProductScreen(props){
     const {changeNumber}= numberOfProducts
     const product=data.products.find(({_id}) => _id===props.match.params.id)
     const [cart, setCart]=useState('Add to cart')
+    const [active, setActive]=useState(false)
 
     const isAddedToCart=()=>{
     let items = JSON.parse(localStorage.getItem('product')|| "[]")
     for(let i = 0; i < items.length; i++) {
         if (items[i].id === props.match.params.id) {
-            return true
+            setActive(true)
         }
     }
-    return false
     }
-
-    const [active, setActive]=useState(isAddedToCart)
-
     const addToCart=()=>{
         let items = JSON.parse(localStorage.getItem('product')|| "[]")
         let found = false;

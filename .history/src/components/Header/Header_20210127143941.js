@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import  cart from '../../images/shopping-cart.svg'
 import { CartContext } from '../../context/CartContext';
 import { AccountContext } from '../../context/AccountContext';
-import userSVG from '../../images/user.svg'
 
 
 function Header(props){
@@ -29,7 +28,7 @@ function Header(props){
                 </Link>
                {user===null ?  <Link to='/signin' style={style}>
                 <a href='#dds' className="header-link">Sign in</a>
-                </Link> : <Link to='/'><img src={userSVG} height='30px' className='user-cart-img'></img></Link>}
+                </Link> : }
             </div>
         </div>
     )

@@ -17,6 +17,7 @@ function Item(props){
 
     const deleteProduct= (id)=>{
         const objects = JSON.parse(localStorage.getItem("product") || "[]")
+        console.log(objects)
 
         for( let i = 0; i < objects.length; i++){
             if ( objects[i].id === id) {

@@ -21,6 +21,6 @@ align-items: center;
     border-radius: 50px;
     border: 1px solid #ffffff
 }
-.user-cart-img{
-    margin: 2rem;
+.user-card img{
+    margin-right: 2rem;
 }
