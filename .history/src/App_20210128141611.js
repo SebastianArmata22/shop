@@ -9,10 +9,9 @@ import CardScreen from './components/CardScreen';
 import SignInScreen from './components/SignInScreen';
 import SignUpScreen from './components/SignUpScreen';
 import CartContextProvider from './context/CartContext';
+import Item from './components/Item';
 import AccountContextProvider from './context/AccountContext';
 import AccountScreen from './components/AccountScreen';
-import Profile from './components/Profile';
-import History from './components/History';
 
 function App() {
 

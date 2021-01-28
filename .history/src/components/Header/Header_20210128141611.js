@@ -29,7 +29,7 @@ function Header(props){
                 </Link>
                {user===null ?  <Link to='/signin' style={style}>
                 <a href='#dds' className="header-link">Sign in</a>
-                </Link> : <Link to='/account/profile'><img src={userSVG} height='30px' className='user-cart-img'></img></Link>}
+                </Link> : <Link to='/account'><img src={userSVG} height='30px' className='user-cart-img'></img></Link>}
             </div>
         </div>
     )

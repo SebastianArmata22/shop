@@ -11,8 +11,6 @@ import SignUpScreen from './components/SignUpScreen';
 import CartContextProvider from './context/CartContext';
 import AccountContextProvider from './context/AccountContext';
 import AccountScreen from './components/AccountScreen';
-import Profile from './components/Profile';
-import History from './components/History';
 
 function App() {
 

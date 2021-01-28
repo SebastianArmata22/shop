@@ -272,7 +272,7 @@ text-align: center;
 .settings{
     background-color: #ecf0f1;
     width: 20%;
-    min-height: 100%;
+    height: 100%;
 }
 .settings button{
     width: 100%;
@@ -297,11 +297,5 @@ text-align: center;
     margin-right: 1rem;
 }
 .account-container{
-    width: 100%;
-}
-.profile-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    width: 70%;
 }
