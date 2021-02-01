@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import './componentStyle.css'
 import './form.css'
 import gpay from '../images/gpay.jpg'
@@ -13,8 +13,7 @@ function Order(props){
     const {user}= usercontext
     const addToOrder=()=>{
         products.map(product=>{
-            console.log("product ", product)
-            ordercontext.changeOrder(product)
+            ordercontext.setOrders(product)
         })
     }
     return(

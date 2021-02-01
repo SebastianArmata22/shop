@@ -5,13 +5,8 @@ export const OrderContext=createContext()
 function OrderContextProvider(props){
     const [orders, setOrders]=useState([])
 
-    const changeOrder=(order)=>{
-        setOrders(orders=>[...orders, order])
-        console.log(orders)
-    }
-
     return(
-        <OrderContext.Provider value={{orders,changeOrder}}>
+        <OrderContext.Provider value={{orders,setOrders}}>
             {props.children}
 
         </OrderContext.Provider>

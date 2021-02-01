@@ -3,8 +3,9 @@ import { OrderContext } from '../context/OrderContext'
 
 function History(props){
     const ordercontext=useContext(OrderContext)
-    const orders=ordercontext.orders
-    console.log(orders)
+    const orderList=ordercontext.orders
+    const orders= [...orderList]
+    console.log9orders
 
     return(
         <div>

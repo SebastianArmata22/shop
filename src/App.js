@@ -10,6 +10,7 @@ import SignInScreen from './components/SignInScreen';
 import SignUpScreen from './components/SignUpScreen';
 import CartContextProvider from './context/CartContext';
 import AccountContextProvider from './context/AccountContext';
+import OrderContextProvider from './context/OrderContext'
 import AccountScreen from './components/AccountScreen';
 import Profile from './components/Profile';
 import History from './components/History';
@@ -20,29 +21,31 @@ function App() {
   return (
     <AccountContextProvider>
       <CartContextProvider>
-        <BrowserRouter>
-          <div className='container'>
-            <header>
-              <Header />
-            </header>
-            <main>
-              <div className="main-container">
-                <Route path="/" exact={true} component={Main} />
-                <Route path="/products" component={Products} />
-                <Route path="/product/:id" component={ProductScreen} />
-                <Route path="/cart" component={CardScreen} />
-                <Route path="/signin/:order" component={SignInScreen} />
-                <Route path="/signup" component={SignUpScreen} />
-                <Route path="/account" component={AccountScreen} />
-                <Route path="/order" component={Order} />
+        <OrderContextProvider>
+          <BrowserRouter>
+              <div className='container'>
+                <header>
+                  <Header />
+                </header>
+                <main>
+                  <div className="main-container">
+                    <Route path="/" exact={true} component={Main} />
+                    <Route path="/products" component={Products} />
+                    <Route path="/product/:id" component={ProductScreen} />
+                    <Route path="/cart" component={CardScreen} />
+                    <Route path="/signin/:order" component={SignInScreen} />
+                    <Route path="/signup" component={SignUpScreen} />
+                    <Route path="/account" component={AccountScreen} />
+                    <Route path="/order" component={Order} />
+                  </div>
+                </main>
+                <footer>
+                  <Footer />
+                </footer>
               </div>
-            </main>
-            <footer>
-              <Footer />
-            </footer>
-          </div>
-      </BrowserRouter>
-    </CartContextProvider>
+          </BrowserRouter>
+        </OrderContextProvider>
+      </CartContextProvider>
    </AccountContextProvider>
   );
 }

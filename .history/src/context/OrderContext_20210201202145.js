@@ -6,7 +6,7 @@ function OrderContextProvider(props){
     const [orders, setOrders]=useState([])
 
     const changeOrder=(order)=>{
-        setOrders(orders=>[...orders, order])
+        setOrders([...orders,{order}])
         console.log(orders)
     }
 
