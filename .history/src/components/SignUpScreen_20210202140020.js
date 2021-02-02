@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from '@material-ui/core'
 import React, { useContext } from 'react'
 import { AccountContext } from '../context/AccountContext'
 import './componentStyle.css'
@@ -64,7 +64,7 @@ function SignUpScreen(props){
                             <input type="password" id="repeatpassword" name="repeatpassword" placeholder="Your password.."></input>
                         </div>
                     </div>
-                    <Link to='/account/profile'>
+                    <Link to='/profile'>
                         <button onClick={handleButtonClicked}>Submit</button>
                     </Link>
                 </div>

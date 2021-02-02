@@ -64,7 +64,7 @@ function SignUpScreen(props){
                             <input type="password" id="repeatpassword" name="repeatpassword" placeholder="Your password.."></input>
                         </div>
                     </div>
-                    <Link to='/account/profile'>
+                    <Link to='/profile'>
                         <button onClick={handleButtonClicked}>Submit</button>
                     </Link>
                 </div>

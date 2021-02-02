@@ -4,7 +4,8 @@ import { OrderContext } from '../context/OrderContext'
 function History(props){
     const ordercontext=useContext(OrderContext)
     const orders=ordercontext.orders
-    console.log(orders)
+    const product= orders.map(order=>data.products.find(({_id}) => _id===order.id))
+    console.log(product)
 
     return(
         <div>

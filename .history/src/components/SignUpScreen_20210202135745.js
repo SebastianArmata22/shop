@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import React, { useContext } from 'react'
 import { AccountContext } from '../context/AccountContext'
 import './componentStyle.css'
@@ -64,9 +63,7 @@ function SignUpScreen(props){
                             <input type="password" id="repeatpassword" name="repeatpassword" placeholder="Your password.."></input>
                         </div>
                     </div>
-                    <Link to='/account/profile'>
-                        <button onClick={handleButtonClicked}>Submit</button>
-                    </Link>
+                    <button onClick={handleButtonClicked}>Submit</button>
                 </div>
             </div>
         </div>
