@@ -6,8 +6,6 @@ import paypal from '../images/paypal.jpg'
 import cod from '../images/cod.png'
 import { AccountContext } from '../context/AccountContext'
 import { OrderContext } from '../context/OrderContext'
-import { Link } from 'react-router-dom';
-
 function Order(props){
     const [products, setProducts]=useState(JSON.parse(localStorage.getItem("product") || "[]"));
     const ordercontext=useContext(OrderContext)
@@ -104,9 +102,7 @@ function Order(props){
                 </div>
             </div>
         </div>
-        <Link to='/sumarry'>
-            <button onClick={addToOrder}>Submit</button>
-        </Link>
+        <button onClick={addToOrder}>Submit</button>
     </div>
         </div>
     )

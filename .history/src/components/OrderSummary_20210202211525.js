@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
-import { OrderContext } from '../context/OrderContext'
+import OrderContext from '../context/OrderContext'
 
 function OrderSummary(props){
     const ordercontext=useContext(OrderContext)
 
     return(
-        <div className='main-div'>
-            <div className='products-container'>
+        <div>
+            <div>
                 <div>order
 
                 </div>

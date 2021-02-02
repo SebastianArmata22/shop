@@ -5,8 +5,8 @@ function OrderSummary(props){
     const ordercontext=useContext(OrderContext)
 
     return(
-        <div className='main-div'>
-            <div className='products-container'>
+        <div className="cart-div">
+            <div>
                 <div>order
 
                 </div>

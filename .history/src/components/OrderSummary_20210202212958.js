@@ -6,7 +6,7 @@ function OrderSummary(props){
 
     return(
         <div className='main-div'>
-            <div className='products-container'>
+            <div className='sign-in-up-container'>
                 <div>order
 
                 </div>

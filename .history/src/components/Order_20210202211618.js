@@ -104,7 +104,7 @@ function Order(props){
                 </div>
             </div>
         </div>
-        <Link to='/sumarry'>
+        <Link to='/order/sumarry'>
             <button onClick={addToOrder}>Submit</button>
         </Link>
     </div>

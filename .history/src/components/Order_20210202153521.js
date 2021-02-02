@@ -6,13 +6,16 @@ import paypal from '../images/paypal.jpg'
 import cod from '../images/cod.png'
 import { AccountContext } from '../context/AccountContext'
 import { OrderContext } from '../context/OrderContext'
-import { Link } from 'react-router-dom';
-
 function Order(props){
     const [products, setProducts]=useState(JSON.parse(localStorage.getItem("product") || "[]"));
     const ordercontext=useContext(OrderContext)
     const usercontext=useContext(AccountContext)
     const {user}= usercontext
+    const addToOrder=()=>{
+        products.map(product=>{
+            ordercontext.changeOrder(product)
+        })
+    }
     const orderData={}
     const handleFirstNameChanged = value=>{
         orderData.firstName=value
@@ -32,16 +35,6 @@ function Order(props){
     const handleButtonClicked= ()=>{
         ordercontext.changeDeliveryAdress(orderData)
      }
-     const choosePayment=(payment)=>{
-        ordercontext.changePaymentMethod(payment)
-
-     }
-     const addToOrder=()=>{
-        products.map(product=>{
-            ordercontext.changeOrder(product)
-        })
-        handleButtonClicked()
-    }
     return(
         <div className="cart-div" >
    <div className='profile-container'>
@@ -90,23 +83,21 @@ function Order(props){
         <div className='payment-container'>
             <h3>Payment</h3>
             <div >
-                <div className="payment-item" onClick={()=>choosePayment(1)}>
+                <div className="payment-item">
                     <img src={gpay}></img>
                     <p>Google Pay</p>
                 </div>
-                <div className="payment-item" onClick={()=>choosePayment(2)}>
+                <div className="payment-item">
                     <img src={paypal}></img>
                     <p>PayPal</p>
                 </div>
                 <div className="payment-item">
-                    <img src={cod} style={{backgroundColor: '#ffffff'}} onClick={()=>choosePayment(3)}></img>
+                    <img src={cod} style={{backgroundColor: '#ffffff'}}></img>
                     <p>Cash on delivery</p>
                 </div>
             </div>
         </div>
-        <Link to='/sumarry'>
-            <button onClick={addToOrder}>Submit</button>
-        </Link>
+        <button onClick={addToOrder}>Submit</button>
     </div>
         </div>
     )

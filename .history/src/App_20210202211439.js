@@ -36,7 +36,7 @@ function App() {
                     <Route path="/signup" component={SignUpScreen} />
                     <Route path="/account" component={AccountScreen} />
                     <Route path="/order" component={Order} />
-                    <Route path="/sumarry" component={OrderSummary} />
+                    <Route path="/order/summary" component={OrderSummary} />
 
                   </div>
                 </main>
