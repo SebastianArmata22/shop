@@ -1,0 +1,350 @@
+.prod-container{
+    width: 20rem ;
+    height: 20rem;
+    text-align: center;
+}
+.prod-container img{
+    width: 240px;
+    height: 240px;
+}
+.prod-container {
+    text-decoration: none;
+
+}
+
+.products-container{
+    width: 80%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.main-div{
+    display: flex;
+    width: 100%;
+   justify-content: center;
+   background-color: #ecf0f1 ;
+   padding: 2rem;
+   min-height: 84vh;
+}
+.product-screen-contianer{
+    min-height: 84vh;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.photo-price-div{
+    width: 90%;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem 0;
+}
+.photo-price-div img{
+    width: 20rem;
+}
+.sale-div{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+.sale-div button{
+    margin-top: 2rem;
+    width: 100%;
+    align-items: center;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.sale-div div div{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #44bd32;
+    background-color: #44bd32;
+    color: #ffffff;
+    height: 2rem;
+    font-size: 1rem;
+}
+.sale-div button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+.description{
+    margin-bottom: 1rem;
+    padding: 2rem;
+    width: 90%;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around ;
+}
+.technical-data-div{
+   width: 90%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 1rem;
+   flex-direction: column;
+   background-color: #ffffff;
+}
+.technical-data-div h3{
+    padding: 0.5rem;
+}
+.technical-data-div table{
+    width: 100%;
+}
+.technical-data-div tr{
+    width: 100%;
+}
+.technical-data-div td{
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem;
+}
+.even-row{
+    background-color: #ecf0f1;
+}
+.cart-div{
+    min-height: 84vh;
+    background-color: #ecf0f1;
+}
+.cart{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+
+}
+.list-products-in-cart{
+    width: 50%;
+    background-color: #ffffff;
+    margin: 2rem;
+    min-height: 10rem;
+}
+.summary-cart{
+    min-width: 30%;
+    background-color: #ffffff;
+    margin: 2rem;
+    height: 10rem;
+}
+.item-container{
+width: 100%;
+margin: 1rem;
+display: flex;
+flex-wrap: wrap;
+border-bottom: 1px solid #ecf0f1;
+}
+.img-item img{
+height: 10rem;
+width: 10rem;
+
+
+}
+.description-item{
+width: 40%;
+text-align: center;
+}
+.number-products-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number-products-container div{
+    width: 2rem;
+    margin: 0;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7f8c8d;
+}
+.number-products-container button{
+    width: 2rem;
+    height: 2rem;
+    background-color: #ecf0f1;
+    border-style: none;
+    margin: 1rem;
+}
+.number-products-container img{
+    height: 1.5rem;
+}
+.number-products-container img:hover{
+    cursor: pointer;
+}
+.empty-cart-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.buy-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buy-container button{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    margin: 2rem;
+    width: 10rem;
+    height: 2rem;
+}
+.buy-container button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+.total-card{
+    margin: 1rem;
+    display: flex;
+   align-items: center;
+}
+.total-card h3{
+    margin-right: 1rem;
+}
+.sign-in-up-container{
+    min-width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.sign-in-up-container input{
+    margin: 0.5rem;
+    min-width: 70%;
+    height: 2rem;
+}
+
+.sign-in-btn {
+    background-color: #000000;
+    border: 1px solid #000000;
+    cursor: pointer;
+    color: #ffffff;
+    min-width: 70%;
+    height: 2rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.sign-up-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #7f8c8d;
+    min-width: 70%;
+    height: 10rem;
+    margin-top: 3rem;
+}
+.sign-up-btn{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    width: 70%;
+    height: 2rem;
+    cursor: pointer;
+}
+.added-to-cart-btn{
+    background-color: #2ecc71 !important;
+    border: 1px solid #2ecc71 !important;
+}
+.user-card p{
+    color:#ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+.account-screen{
+    width: 100%;
+    min-height: 84vh;
+    background-color: #ffffff;
+    display: flex;
+}
+.settings{
+    background-color: #ecf0f1;
+    width: 20%;
+    min-height: 100%;
+}
+.settings button{
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #ecf0f1;
+    color: #666969;
+    cursor: pointer;
+    margin-top: 1px;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.settings button:hover{
+    color: #000000;
+    border-right: 2px solid #666969;
+    background-color: #dce0e0;
+}
+.settings button img{
+    margin-right: 1rem;
+}
+.account-container{
+    width: 100%;
+}
+.profile-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-container h3{
+    margin: 1rem 0 1rem 0;
+}
+.summary-container{
+    width: 80%;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.order-container{
+    min-width: 70%;
+    border-right: 2px solid #ecf0f1;
+    display: flex;
+    justify-content: center;
+}
+.order-container table{
+    width: 90%;
+}
+
+.product-in-order{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.product-in-order-active:hover{
+    background-color: #ecf0f1;
+}
+.column-33{
+    width: 33%;
+    margin: 1rem;
+    text-align: center;
+}
+.order-data{
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    .settings p{
+      display: none;
+    }
+  }

@@ -1,0 +1,40 @@
+.header-container{
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+.header-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+.user-card{
+display: flex;
+align-items: center;
+}
+.user-card p{
+    border-radius: 50px;
+    border: 1px solid #ffffff
+}
+.user-cart-img{
+    margin: 2rem;
+}
+.cart-img{
+    height: 30px;
+}
+@media screen and (max-width: 600px) {
+    .header-container {
+      height: 5vh;
+    }
+    .header-link{
+        font-size: 0.9rem;
+    }
+    .user-cart-img{
+        height: 15px;
+    }
+  }
