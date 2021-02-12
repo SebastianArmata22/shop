@@ -40,8 +40,8 @@ function OrderSummary(props){
                     </div>
                     <div>
                         <h3>Payment method</h3>
-                        <img src={(ordercontext.paymentMethod===1 && gpay) || (ordercontext.paymentMethod===2 && paypal) ||
-                            (ordercontext.paymentMethod===3 && cod)} height='70rem' alt='payment method'></img>
+                        <img src={ordercontext.paymentMethod===1 && gpay || ordercontext.paymentMethod===2 && paypal ||
+                            ordercontext.paymentMethod===3 && cod} height='70rem'></img>
                         <p>Status: paid</p>
                     </div>
 

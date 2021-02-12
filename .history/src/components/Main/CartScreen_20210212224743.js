@@ -5,7 +5,7 @@ import './componentStyle.css'
 import Item from './Item'
 
 function CardScreen(props){
-    const [products]=useState(JSON.parse(localStorage.getItem("product") || "[]"));
+    const [products, setProducts]=useState(JSON.parse(localStorage.getItem("product") || "[]"));
     const[finalValue, setFinalValue]=useState(0)
     const handleCallback = (childData) =>{
         setFinalValue(prevFinalValue => prevFinalValue+childData)
