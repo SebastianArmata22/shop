@@ -4,7 +4,7 @@ export default {
         _id: '1',
         name: 'Samsung Galaxy s20 5G',
         price: '899.99',
-        photo : 'https://image.ceneostatic.pl/data/products/95795283/i-samsung-galaxy-s20-plus-sm-g985-8-128gb-ciemnoniebieski.jpg',
+        photo : 'https://dragonist.pl/8971-thickbox_default/samsung-galaxy-s20-5g-g981-12-128gb-dual-sim-szary.jpg',
         display: 'Dynamic AMOLED 2X, 120Hz, HDR10+, 6.2 inches, 1440 x 3200 pixels',
         memory: '128GB 8GB RAM, UFS 3.0',
         camera: '12 MP f/1.8 (wide), 64 MP f/2.0 (telephoto), 12 MP f/2.2 (ultrawide)',
